@@ -1,0 +1,6 @@
+.ipynb_checkpoints/
+*.pyc
+
+boundary_shapefiles/
+lloyd_hires_global_data/
+lloyd_hires_usa_data/
