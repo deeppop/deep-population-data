@@ -11,3 +11,12 @@ The steps for disaggregating population data over a raster grid for a given year
     - Join the population counts with the shapefiles prepared in step 1.
 3. Calculate the area of intersection between each raster cell in the given grid and the Census Tracts that it overlaps with.
 4. Iterate over the Census Tracts and split their population proportionally by area over the raster cells that intersect with them.
+
+## Downloading Satellite Data
+
+Steps:
+
+0. Register for a Google Earth Engine account and install the Earth Engine API python library (https://developers.google.com/earth-engine/python_install_manual).
+1. Run `Earth Engine Authentication.ipynb` once to authenticate your local computer to use the Google Earth Engine API.
+2. Customize and run the `Download from Earth Engine.ipynb` notebook to setup tasks on Google Earth Engine that export square patches of Landsat imagery as GeoTIFFs to your Google Drive account (ensure that you have sufficient space on your Google Drive account, for reference, the current Landsat 8 download uses ~450GB).
+3. Download the GeoTIFFs from your Google Drive account (a batch download tool such as https://github.com/odeke-em/drive might be helpfulif you have performed a large export).
